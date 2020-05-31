@@ -1,0 +1,81 @@
+
+*{
+    /*
+    margin:外边距       padding:内边距
+    margin-top         padding-top
+    margin-right       padding-right
+    margin-bottom      padding-bottom
+    margin-left        padding-left
+    */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background: rgb(244,244,246);
+    padding-top: 44px;
+    padding-bottom: 49px;
+}
+
+/*header*/
+.DS_header{
+
+    background: rgb(40,133,202);
+    line-height: 44px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+    left: 0;
+    top: 0;
+    position: fixed;/*螺丝钉*/
+    width: 100%;
+
+    z-index: 9999;
+
+
+}
+
+.DS_second_section img{
+    width: 100%;
+}
+
+
+footer{
+    display: table;
+    width: 100%;
+    background: black;
+    height: 49px;
+
+    left: 0;
+    bottom: 0;
+
+    position: fixed;
+}
+
+footer a{
+    display: table-cell;
+    width: 20%;
+
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer a span{
+    display: block;
+    color: white;
+    font-size: 13px;
+}
+
+footer a img{
+    width: 20px;
+}
+
+
+/*
+**外部样式：一个项目中有很多地方样式相同，此时用外部样式，增强程序的可维护性
+**页内样式：当一个样式在项目中出现的次数比较少时，代码量稍大时使用
+**行内样式：当某个样式代码很少且样式出现的次数很少时使用
+*/

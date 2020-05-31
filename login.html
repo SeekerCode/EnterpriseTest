@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    <title>袁红刚</title>
+    <!--link标签用来链接外部资源的标签-->
+    <link rel="short icon" href="Resource/icon.png">
+
+    <link rel="stylesheet" href="ExternalStyle.css">
+
+    <script type="text/javascript" src="CommonClass.js"></script>
+
+    <style>
+
+        /*header*/
+        .L_header {
+
+            background: #c50206;
+            line-height: 44px;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+
+            left: 0;
+            top: 0;
+            position: fixed; /*螺丝钉*/
+            width: 100%;
+
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .login_form{
+            display: block;
+            padding: 0px;
+            border: 1px solid #ffff00;
+            background: #c50206;
+
+            width: 8rem;
+            margin: 0 auto;
+            position: relative;
+
+        }
+        form input{
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            color: #ffff00;
+            height: 1.1111111111rem;
+
+        }
+
+    </style>
+</head>
+<body style="background: #c50206">
+
+<!--h5里面新增的语义化标签,它没有特殊的意义,仅是用来增强程序的可读性-->
+<header class="L_header">
+    <!--用来显示少量的文字信息-->
+    <span>登录</span>
+</header>
+
+<!--第三部分-->
+<div>
+    <div class="logo">
+        <img class="L_head_img" src="Resource2/logo.png" alt="">
+    </div>
+
+    <!--第三部分-->
+    <form class="login_form">
+
+        <input id="L_account" type="text" name="account" placeholder="身份证号"><br>
+
+        <input id="L_pwd" type="text" name="password" placeholder="密码"><br>
+
+        <input class="L_login_btn" type="button" value="登录" id="btn">
+
+
+    </form>
+</div>
+
+
+</body>
+</html>
